@@ -1,4 +1,4 @@
-// Node class for our binary tree
+
 class TreeNode {
   constructor(value) {
     this.value = value;
@@ -7,7 +7,6 @@ class TreeNode {
   }
 }
 
-// Binary Search Tree class with insert and traversal methods
 class BinarySearchTree {
   constructor() {
     this.root = null;
@@ -37,7 +36,7 @@ class BinarySearchTree {
     }
   }
 
-  // Breadth-First Search
+ 
   bfs() {
     const data = [];
     const queue = [];
@@ -56,7 +55,7 @@ class BinarySearchTree {
     return data;
   }
 
-  // Depth-First Search: Preorder (root → left → right)
+  
   dfsPreorder() {
     const data = [];
     function traverse(node) {
@@ -69,7 +68,6 @@ class BinarySearchTree {
     return data;
   }
 
-  // Depth-First Search: Inorder (left → root → right)
   dfsInorder() {
     const data = [];
     function traverse(node) {
@@ -82,7 +80,6 @@ class BinarySearchTree {
     return data;
   }
 
-  // Depth-First Search: Postorder (left → right → root)
   dfsPostorder() {
     const data = [];
     function traverse(node) {
@@ -96,7 +93,7 @@ class BinarySearchTree {
   }
 }
 
-// Example: Build a tree and traverse it
+
 const bst = new BinarySearchTree();
 [10, 6, 15, 3, 8, 20].forEach(num => bst.insert(num));
 
